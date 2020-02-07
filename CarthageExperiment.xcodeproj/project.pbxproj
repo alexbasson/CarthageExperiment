@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,12 @@
 		FA2D107A23E4B3D200FED0DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2D107923E4B3D200FED0DD /* Assets.xcassets */; };
 		FA2D107D23E4B3D200FED0DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2D107B23E4B3D200FED0DD /* LaunchScreen.storyboard */; };
 		FA2D108823E4B3D200FED0DD /* CarthageExperimentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D108723E4B3D200FED0DD /* CarthageExperimentTests.swift */; };
+		FA2D109523E4C24F00FED0DD /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2D109423E4C24F00FED0DD /* Nimble.framework */; platformFilter = ios; };
+		FA2D109A23E4C28900FED0DD /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA2D109923E4C28900FED0DD /* Nimble.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA2D109C23E4C28B00FED0DD /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA2D109B23E4C28B00FED0DD /* Quick.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA2D109D23E4C3BE00FED0DD /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2D109623E4C25900FED0DD /* Quick.framework */; platformFilter = ios; };
+		FA2D109F23E4C45900FED0DD /* SomeFunctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D109E23E4C45900FED0DD /* SomeFunctionTests.swift */; };
+		FA2D10A123E4D70200FED0DD /* SomeFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D10A023E4D70200FED0DD /* SomeFunction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +31,20 @@
 			remoteInfo = CarthageExperiment;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA2D109823E4C27100FED0DD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FA2D109A23E4C28900FED0DD /* Nimble.framework in CopyFiles */,
+				FA2D109C23E4C28B00FED0DD /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FA2D106D23E4B3D000FED0DD /* CarthageExperiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarthageExperiment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +58,13 @@
 		FA2D108323E4B3D200FED0DD /* CarthageExperimentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarthageExperimentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2D108723E4B3D200FED0DD /* CarthageExperimentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarthageExperimentTests.swift; sourceTree = "<group>"; };
 		FA2D108923E4B3D200FED0DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA2D109223E4C24800FED0DD /* Carthage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Carthage; sourceTree = "<group>"; };
+		FA2D109423E4C24F00FED0DD /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		FA2D109623E4C25900FED0DD /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		FA2D109923E4C28900FED0DD /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = "<group>"; };
+		FA2D109B23E4C28B00FED0DD /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = "<group>"; };
+		FA2D109E23E4C45900FED0DD /* SomeFunctionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeFunctionTests.swift; sourceTree = "<group>"; };
+		FA2D10A023E4D70200FED0DD /* SomeFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeFunction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA2D109523E4C24F00FED0DD /* Nimble.framework in Frameworks */,
+				FA2D109D23E4C3BE00FED0DD /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,9 +90,13 @@
 		FA2D106423E4B3D000FED0DD = {
 			isa = PBXGroup;
 			children = (
+				FA2D109B23E4C28B00FED0DD /* Quick.framework */,
+				FA2D109923E4C28900FED0DD /* Nimble.framework */,
 				FA2D106F23E4B3D000FED0DD /* CarthageExperiment */,
 				FA2D108623E4B3D200FED0DD /* CarthageExperimentTests */,
 				FA2D106E23E4B3D000FED0DD /* Products */,
+				FA2D109223E4C24800FED0DD /* Carthage */,
+				FA2D109323E4C24F00FED0DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +119,7 @@
 				FA2D107923E4B3D200FED0DD /* Assets.xcassets */,
 				FA2D107B23E4B3D200FED0DD /* LaunchScreen.storyboard */,
 				FA2D107E23E4B3D200FED0DD /* Info.plist */,
+				FA2D10A023E4D70200FED0DD /* SomeFunction.swift */,
 			);
 			path = CarthageExperiment;
 			sourceTree = "<group>";
@@ -95,8 +129,18 @@
 			children = (
 				FA2D108723E4B3D200FED0DD /* CarthageExperimentTests.swift */,
 				FA2D108923E4B3D200FED0DD /* Info.plist */,
+				FA2D109E23E4C45900FED0DD /* SomeFunctionTests.swift */,
 			);
 			path = CarthageExperimentTests;
+			sourceTree = "<group>";
+		};
+		FA2D109323E4C24F00FED0DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA2D109423E4C24F00FED0DD /* Nimble.framework */,
+				FA2D109623E4C25900FED0DD /* Quick.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +170,7 @@
 				FA2D107F23E4B3D200FED0DD /* Sources */,
 				FA2D108023E4B3D200FED0DD /* Frameworks */,
 				FA2D108123E4B3D200FED0DD /* Resources */,
+				FA2D109823E4C27100FED0DD /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -203,6 +248,7 @@
 				FA2D107523E4B3D000FED0DD /* ViewController.swift in Sources */,
 				FA2D107123E4B3D000FED0DD /* AppDelegate.swift in Sources */,
 				FA2D107323E4B3D000FED0DD /* SceneDelegate.swift in Sources */,
+				FA2D10A123E4D70200FED0DD /* SomeFunction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA2D108823E4B3D200FED0DD /* CarthageExperimentTests.swift in Sources */,
+				FA2D109F23E4C45900FED0DD /* SomeFunctionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +448,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CG7Z8Q45GH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CarthageExperimentTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -423,6 +474,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CG7Z8Q45GH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CarthageExperimentTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
